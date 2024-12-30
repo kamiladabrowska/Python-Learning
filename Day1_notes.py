@@ -82,3 +82,28 @@ git add        Stage files to be included in the next commit.
 git status:     Check the current status of your repository.
 git push:       Upload commits to a remote repository (e.g., GitHub)"""
 #git push origin main
+#git push
+
+#2. Git Workflow
+
+#Create a folder for your project.
+#Open a terminal, navigate to the folder, and run:
+    #git init
+#Add your code and stage it:
+    #git add .
+
+#Commit the changes:
+    #git commit -m "Initial commit"
+
+#Link your project to a GitHub repository:
+    #git remote add origin https://github.com/your-username/your-repo.git
+
+#Push the code to GitHub:
+    #git push -u origin main
+
+#3. Setting Up Git in PyCharm
+#Enable Git for your project:
+#   - Go to VCS > Enable Version Control Integration, and select "Git."
+#   - Use the built-in Git interface to:
+#   - Commit changes.
+#   - Push code to GitHub directly.
