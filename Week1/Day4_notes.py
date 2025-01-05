@@ -140,6 +140,8 @@ for name, score in zip(names, scores):
 #3. Using List Comprehensions with Loops
 #A list comprehension is a compact way to create a new list based on an existing iterable.
 
+list = [expression for value in iterable if condition]
+
 #Example: Square every number in a list.
 numbers = [1, 2, 3, 4, 5]
 squares = [num ** 2 for num in numbers]

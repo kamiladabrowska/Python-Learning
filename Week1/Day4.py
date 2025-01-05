@@ -48,20 +48,58 @@ else:
 Take a sentence as input.
 Create a list of tuples where each tuple contains the index of a word and the word itself.
 Example Input: "Learning Python is fun" Expected Output: [(0, "Learning"), (1, "Python"), (2, "is"), (3, "fun")]
+"""
 
+sentence2 = input("Please give me a sentence: ").strip()
+if not sentence2:
+    print("You did not provide a sentence.")
+else:
+    a_list = [(index, word) for index, word in enumerate(sentence2.split())]
+    print(a_list)
+
+"""
 Exercise 2: Filtering with Loops
 Ask the user for a list of numbers (comma-separated).
 Filter out all numbers divisible by 3 and return the new list.
-Example Input: "3, 6, 7, 8, 9" Expected Output: [7, 8]
+Example Input: "3, 6, 7, 8, 9" Expected Output: [7, 8]"""
 
-Exercise 3: Prime Numbers with Else
+numbers_list = input("Please give me a list of numbers (comma-separated): ").split(", ")
+if not numbers_list:
+    print("Please give me a list of numbers.")
+else:
+    new_list = [number for number in list(numbers_list) if int(number) % 3 != 0]
+    print(new_list)
+
+"""Exercise 3: Prime Numbers with Else
 Write a program that asks the user for a number and determines if it’s a prime number.
-Use a for-else loop to implement the check.
+Use a for-else loop to implement the check."""
 
-Exercise 4: Using zip()
+try:
+    user_number = int(input("Please give a number: "))
+except ValueError:
+    print("Please provide a valid number: ")
+else:
+    for i in range(2, user_number):
+        if user_number % i == 0:
+            print(f"Number {user_number} is not a prime number.")
+            break
+    else:
+        print(f"Number {user_number} is a prime number.")
+
+
+"""Exercise 4: Using zip()
 Ask the user for two lists of equal length (comma-separated).
 Combine the two lists into a list of tuples.
 Example Input:
 First List: "apple, banana, cherry"
 Second List: "red, yellow, purple"
 Expected Output: [("apple", "red"), ("banana", "yellow"), ("cherry", "purple")]"""
+
+print("You will be asked to provide two comma-separated lists of the same length.")
+first_list = input("Please give me the first list: ").split(", ")
+second_list = input("Please give me the second list: ").split(", ")
+if len(first_list) != len(second_list):
+    print("The length of the lists is not the same.")
+else:
+    for element1, element2 in list(zip(first_list, second_list)):
+        print(element1, element2)
