@@ -1,9 +1,24 @@
-#RECAP
+"""1. Function with Default and Keyword Arguments
+Write a function that calculates the total cost of an order:
 
-#Enumerate: Write a program that asks the user for a sentence. Use enumerate() to print the index and character for every vowel in the sentence.
-#zip(): Ask the user for two lists of numbers (comma-separated). Use zip() to calculate and print the sum of corresponding elements.
-#List comprehension: Write a program that takes a list of words as input and creates a new list containing only words longer than 5 characters using a list comprehension.
-#Loop with else: Write a program that takes a number as input and checks if it is divisible by any number from 2 to 9 using a for-else loop.
-#Dictionary: Create a dictionary with product names as keys and their prices as values. Write a loop to print all products that cost more than $50.
-#Filtering: Ask the user for a list of numbers (comma-separated). Filter out numbers less than 10 and print the remaining ones.
-#itertools: Use itertools.cycle to create a program that alternates printing "Red", "Yellow", "Green" three times (to mimic a traffic light cycle)."""
+It should take item_cost (mandatory), quantity (default 1), and discount (default 0).
+Return the total cost after applying the discount.
+2. Lambda with List Transformation
+Given a list of numbers, use a lambda function inside map() to square each number. Return the new list.
+
+3. Nested Lists
+Create a 3x3 matrix representing a tic-tac-toe board:
+
+Use X, O, or - to represent empty spots.
+Print the board row by row.
+4. Combining Functions and Lists
+Write a function that:
+
+Accepts a list of numbers.
+Returns the maximum number, minimum number, and their difference.
+5. Mini Challenge
+Build a grade calculator:
+
+Accept a dictionary where keys are student names, and values are lists of their scores (e.g., {"Alice": [80, 90], "Bob": [70, 85]}).
+Write a function to calculate the average score for each student.
+Write another function to find the student with the highest average."""
